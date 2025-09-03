@@ -4,11 +4,11 @@
 let m1=80,m2=60,m3=50,m4=70,m5=75;
 let total=m1+m2+m3+m4+m5;
 let percantage=total/5;
-let grade=(percantage>=80) ?'distriction':
-(percantage>=60)?'first':
-(percantage>=50)?'second':
-(percantage>=35)?'third':
-'fail';
+let grade=(percantage>=80) ?'Distriction':
+(percantage>=60)?'First':
+(percantage>=50)?'Second':
+(percantage>=35)?'Third':
+'Fail';
 switch(grade){
     case"Distriction":
     console.log("Division:Distriction");
