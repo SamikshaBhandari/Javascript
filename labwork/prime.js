@@ -7,6 +7,6 @@ for(let i=2;i<100;i++){
     }
  }
  if(c==1){
-    console.log(i,"It is a prime number");
+    console.log(i,"It is a prime number");  `   `
  }
 }

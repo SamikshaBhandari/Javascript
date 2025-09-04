@@ -1,12 +1,19 @@
 //4.WAP that takes a number as an argument and return its factorial 
 // .test the function with different 
 
-function fact(n){
-    if(n==0||n==1){
-        return n;
+function factorial(n){
+    if(n<0)
+        return`factorial of ${n} doesn't exist`;
+    else if(n===0)
+        return 1;
+    else{
+        let fact=1;
+        for(let i=n;i>=1;i--){
+            fact=fact*i;
+        }
+        return fact;
     }
-else{
-    return fact(n)*fact(n-1);
+    
 }
-}
-console.log("Factorial:",fact(15));
+console.log(factorial(7));
+console.log(factorial(3));
