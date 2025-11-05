@@ -5,7 +5,7 @@ array.forEach(num=>{
     console.log(num);
 })
 
-//map reduce and filter method in array 
+//map reduce and filter method in array  
 
 let arr=[3,4,5,6,7,8];
 let a=arr.map((value,index,a)=>{
@@ -13,3 +13,10 @@ let a=arr.map((value,index,a)=>{
     return value + index;
 })
 console.log(a);
+
+//Array filter method
+let arr1=[5,3,7,9,6,4];
+let a1=arr1.filter((i)=>{
+    return i>5;
+})
+console.log(a1);
