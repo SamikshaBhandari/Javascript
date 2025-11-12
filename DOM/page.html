@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="box"></h1>
+    <p id="box1"></p>
+    <button id="btn">click me</button>
+    <button id="btn1"></button>
+    <script>
+      document.getElementById("box").innerHTML = "This is a Paragraph";
+      document.getElementById("box1").innerHTML = "this is page";
+      document.getElementById("btn1").innerHTML = "View here";
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", function () {
+        btn.style.backgroundColor = "blue";
+        btn.style.color = "white";
+        btn.style.border = "none";
+        btn.style.borderRadius = "5px";
+      });
+
+      const boxh1 = document.getElementById("box");
+      boxh1.style.color = "red";
+
+      const btn1 = document.getElementById("btn1");
+      btn1.addEventListener("click", function () {
+        btn1.style.backgroundColor = "blue";
+        btn1.style.color = "white";
+        btn1.style.border = "none";
+        btn1.style.borderRadius = "5px";
+      });
+    </script>
+  </body>
+</html>
