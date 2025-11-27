@@ -67,7 +67,6 @@
 
         if (PhoneRegex.test(phoneInput.value)) {
           result[2].innerHTML = "valid phone number";
-          console.log(test);
           result[2].style.color = "green";
           phoneInput.style.border = "1px solid green";
         } else {
@@ -76,12 +75,11 @@
           phoneInput.style.border = "1px solid red";
         }
         if (ZipcodeRegex.test(zipcodeInput.value)) {
-          result[3].innerHTML = "Invalid Zipcode";
-          console.log(test);
+          result[3].innerHTML = "valid zipcode";
           result[3].style.color = "green";
           zipcodeInput.style.border = "1px solid green";
         } else {
-          result[3].innerHTML = "valid Zipcode";
+          result[3].innerHTML = "Invalid zipcode";
           result[3].style.color = "red";
           zipcodeInput.style.border = "1px solid red";
         }
