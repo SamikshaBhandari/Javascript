@@ -1,0 +1,84 @@
+<!--15.design a js based client side validation system for a registration form, including the following task
+1.Verify that the email address provided adheres to correct the format.
+2.Validate the age input to accept only numeric values between 1 and 120.
+3. Ensure that the password and confirm password fields match.
+4.Validate the zip code input to match a specific format (eg,12345 or 12345-6789).
+5.Confirm that the checkbox agreeing  to terms and conditions is checked.
+6. Validate the URL input to ensure it follows a valid format.
+7.Check that the entered date is not set in the future.
+8.REstrict the uploaded file size to a specified limit.
+9.Confirm that a country is selected from a dropdown menu.
+10.Implemented password strength validation requiring at least 8 characters including a mix of upper 
+case ,lowercase,numeric,and special characters.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="registration">
+      <label for="email">Email</label>
+      <input
+        type="text"
+        id="email"
+        placeholder="enter your email"
+      />
+            <p class="error"></p>
+
+      <br /><br />
+
+      <label for="age">Age</label>
+      <input type="text" id="age" placeholder="enter your age" />
+      <p class="error"></p>
+      <br/><br/>
+      <label for="Password">Password</label>
+      <input type="password" id="password" placeholder="enter your password" />
+          <p class="error"></p>
+    </br/><br/>
+      <label for="confirm pass">Confirm Password</label>
+      <input
+        type="password"
+        id="confirmpass"
+        placeholder="confirm your password"
+      />
+            <p class="error"></p>
+      <br/><br/>
+      <label for="Zipcode">Zip Code</label>
+      <input type="text" id="zipcode" placeholder="enter your zipcode" />
+            <p class="error"></p>
+      <br/><br/>
+      <input type="checkbox" id="terms" />
+      <label for="term">Agree to terms and conditions</label>
+            <p class="error"></p>
+      <br/><br/>
+      <label for="website url">website URL</label>
+      <input type="text" id="url" placeholder="enter your website url" />
+            <p class="error"></p>
+      <br/><br/>
+      <label for="date">Date</label>
+      <input type="date" id="date" />
+            <p class="error"></p>
+      <br/><br/>
+      <label for="fileupload">File Upload</label>
+      <input type="file" id="fileupload" />
+            <p class="error"></p>
+      <br/><br/>
+      <label for="country">Country</label>
+      <select id="country">
+        <option value="">Select your country</option>
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="au">Australia</option>
+      </select>
+            <p class="error"></p>
+      <br/><br/>
+      <input type="submit" value="Register" />
+    </form>
+    <script src="labwork15.js">
+    </script>
+  </body>
+</html>
