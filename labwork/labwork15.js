@@ -63,4 +63,54 @@ const registration=document.getElementById('registration');
                         confirmPasswordInput.style.border='1px solid red';   
                 }
 
+                 if(zipcodePattern.test(zipcodeInput.value)){
+                  errorMessage[4].textContent='valid zipcode';
+                  errorMessage[4].style.color='green'; 
+                  zipcodeInput.style.border='1px solid green';
+                }else{
+                  errorMessage[4].textContent='Invalid zipcode';
+                  errorMessage[4].style.color='red';  
+                        zipcodeInput.style.border='1px solid red';   
+                }
+
+                if(urlPattern.test(urlInput.value)){
+                  errorMessage[6].textContent='valid url';
+                  errorMessage[6].style.color='green'; 
+                  urlInput.style.border='1px solid green';
+                }else{
+                  errorMessage[6].textContent='Invalid url';
+                  errorMessage[6].style.color='red';  
+                        urlInput.style.border='1px solid red';   
+                }
+
+                if(datePattern.test(dateInput.value)){
+                  errorMessage[7].textContent='valid date';
+                  errorMessage[7].style.color='green'; 
+                  dateInput.style.border='1px solid green';
+                }else{
+                  errorMessage[7].textContent='Invalid date';
+                  errorMessage[7].style.color='red';  
+                dateInput.style.border='1px solid red';   
+                }
+
+                if(filePattern.test(fileUploadInput.value)){
+                  errorMessage[8].textContent='valid file';
+                  errorMessage[8].style.color='green'; 
+                  fileUploadInput.style.border='1px solid green';
+                }else{
+                  errorMessage[8].textContent='Invalid file';
+                  errorMessage[8].style.color='red';  
+                fileUploadInput.style.border='1px solid red';   
+                }
+
+
+                if(countryPattern.test(countrySelect.value)){
+                  errorMessage[9].textContent='valid country';
+                  errorMessage[9].style.color='green'; 
+                  countrySelect.style.border='1px solid green';
+                }else{
+                  errorMessage[9].textContent='Invalid country';
+                  errorMessage[9].style.color='red';  
+                countrySelect.style.border='1px solid red';   
+                }
         })
