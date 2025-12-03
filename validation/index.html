@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email password validation</title>
+    <style>
+      form {
+        margin: 50px;
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+      }
+      .Email {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        font-size: larger;
+      }
+      .Pass {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        font-size: larger;
+      }
+      .Submit {
+        text-align: center;
+      }
+      .Submit input {
+        padding: 10px 20px;
+        font-size: medium;
+        border: none;
+        border-radius: 5px;
+        background-color: #1c03f9;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="validationForm">
+      <h2>Email and Password Validation</h2>
+      <div class="Email">
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter tour email" />
+        <p class="error"></p>
+      </div>
+      <br />
+      <div class="Pass">
+        <label for="Password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+        <p class="error"></p>
+      </div>
+      <br />
+      <div class="Submit">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
